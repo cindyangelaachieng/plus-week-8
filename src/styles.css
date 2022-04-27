@@ -122,6 +122,9 @@ li:first-letter {
 .days-temp {
   text-align: center;
 }
+.col-sm-7 {
+  padding: 0;
+}
 .emojis {
   font-size: 28px;
 }
@@ -140,13 +143,23 @@ li:first-letter {
   width: 100% auto;
   padding: 1px;
   margin-left: 40px;
+  color: 0000;
 }
 .future {
-  margin: 0 auto;
-  display: block;
-  padding: 4px;
+  padding: 0;
   width: 100% auto;
   text-align: center;
+}
+.days,
+.low {
+  opacity: 0.5;
+}
+.high,
+.low {
+  font-size: 13px;
+  padding: 0;
+  text-align: left;
+  display: block;
 }
 .code-source {
   font-size: 14px;
