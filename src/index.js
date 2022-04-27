@@ -127,13 +127,6 @@ function currentWeather(weather) {
 let citySearch = document.querySelector("#city-form");
 citySearch.addEventListener("submit", enterCity);
 
-function currentLocation(location) {
-  let apiKey = "bc8c015e37beb9dba84c5e94d482acec";
-  let apiSource = "https://api.openweathermap.org/data/2.5/";
-  let apiUrl = `${apiSource}weather?lat=${location.coords.latitude}&lon=${location.coords.longitude}&appid=${apiKey}&units=metric`;
-  axios.get(`${apiUrl}&appid=${apiKey}`).then(showTemp);
-}
-
 function showTemp(response) {
   event.preventDefault();
   let city = response.data.name.toUpperCase();
@@ -147,13 +140,5 @@ function showTemp(response) {
   document.querySelector("#wind").innerHTML = `${windSpeed}`;
   document.querySelector("#humidity").innerHTML = `${currentHumidity}`;
 }
-
-function getPosition(event) {
-  event.preventDefault();
-  navigator.geolocation.getCurrentPosition(currentLocation);
-}
-
-let currentCity = document.querySelector("#current-form");
-currentCity.addEventListener("submit", getPosition);
 
 searchCity("Amsterdam");
