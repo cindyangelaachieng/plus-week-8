@@ -117,16 +117,22 @@ li:first-letter {
 .temp-num {
   font-size: 42px;
 }
-.days,
-.emojis,
 .days-temp {
   text-align: center;
+}
+.days {
+  display: block;
+  text-align: left;
+  opacity: 0.5;
 }
 .col-sm-7 {
   padding: 0;
 }
-.emojis {
-  font-size: 28px;
+.forecast-img {
+  display: block;
+  width: 28px;
+  text-align: left;
+  margin-left: 0;
 }
 .days-temp {
   font-weight: 100;
@@ -150,7 +156,6 @@ li:first-letter {
   width: 100% auto;
   text-align: center;
 }
-.days,
 .low {
   opacity: 0.5;
 }

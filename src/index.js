@@ -38,6 +38,25 @@ function formatDate(timestamp) {
   return `${day}, ${monthDay} ${month} \n ${hours}:${minutes}`;
 }
 
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+
+  let forecastHTML = `<div class="row third-row">`;
+  let days = ["Thu", "Fri", "Sat", "Sun"];
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      `<div class="col-2 future">
+        <div class="row days">${day}</div>
+        <img src="http://openweathermap.org/img/wn/03d@2x.png" alt="" class="forecast-img" id="forecast-img" width = "42">
+        <div class="row days-temp"><span class="high">18</span><span class="low">12</span></div>
+        </div>`;
+  });
+
+  forecastHTML = forecastHTML + `</div>`;
+  forecastElement.innerHTML = forecastHTML;
+}
+
 function enterCity(event) {
   event.preventDefault();
   let newCity = document.querySelector("#city-search");
@@ -126,6 +145,7 @@ function showCelTemp(event) {
 }
 
 let celTemp = null;
+displayForecast();
 
 let currentCity = document.querySelector("#current-form");
 currentCity.addEventListener("submit", getPosition);
