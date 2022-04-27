@@ -152,32 +152,8 @@ function getPosition(event) {
   event.preventDefault();
   navigator.geolocation.getCurrentPosition(currentLocation);
 }
-function showFahrTemp(event) {
-  event.preventDefault();
-  let fahrTemp = (celTemp * 9) / 5 + 32;
-  let tempElement = document.querySelector("#temp-num");
-  celLink.classList.remove("active");
-  fahrLink.classList.add("active");
-  tempElement.innerHTML = Math.round(fahrTemp);
-}
-
-function showCelTemp(event) {
-  event.preventDefault();
-  celLink.classList.add("active");
-  fahrLink.classList.remove("active");
-  let tempElement = document.querySelector("#temp-num");
-  tempElement.innerHTML = Math.round(celTemp);
-}
-
-let celTemp = null;
 
 let currentCity = document.querySelector("#current-form");
 currentCity.addEventListener("submit", getPosition);
-
-let fahrLink = document.querySelector("#fahr-link");
-fahrLink.addEventListener("click", showFahrTemp);
-
-let celLink = document.querySelector("#cel-link");
-celLink.addEventListener("click", showCelTemp);
 
 searchCity("Amsterdam");
