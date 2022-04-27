@@ -1,0 +1,155 @@
+body {
+  font-family: "Quicksand", sans-serif;
+}
+.container {
+  display: block;
+  /* width: 2000px; */
+  color: #5a6275;
+}
+.big {
+  margin: 10% auto;
+  max-width: 500px;
+}
+.search-bar {
+  width: 100% auto;
+  border: solid lightgrey;
+  border-width: 1px;
+  padding: 6px;
+  /*margin: 0;*/
+  box-shadow: 0.5px 0.5px 5px 0.5px lightgrey;
+  border-radius: 5px;
+  margin-right: 120px;
+  margin-left: 20px;
+}
+.icon {
+  width: 50px;
+  vertical-align: middle;
+  margin-top: -20px;
+}
+.units {
+  font-size: 14px;
+  vertical-align: 20px;
+}
+.active {
+  color: black;
+  cursor: default;
+}
+.card {
+  display: block;
+  width: 100% auto;
+  border: none;
+  margin: 0 auto;
+}
+.card-body {
+  border: none;
+}
+a:link {
+  text-decoration: none;
+}
+.card-body {
+  margin: 0 auto;
+  border: none;
+}
+.form-group {
+  width: 100% auto;
+  box-sizing: 800px;
+  padding: 5px;
+  display: inline;
+}
+.day {
+  margin-bottom: 0;
+  text-align: left;
+  font-size: 18px;
+  font-weight: 100;
+}
+.wind {
+  text-align: left;
+  font-size: 12px;
+  margin-bottom: 0;
+  font-weight: 100;
+  font-style: italic;
+}
+.humidity {
+  text-align: left;
+  font-size: 12px;
+  font-weight: 100;
+  font-style: italic;
+}
+.description {
+  text-align: left;
+  font-size: 12px;
+  font-style: italic;
+  margin-bottom: 0;
+  font-weight: 100;
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+li:first-letter {
+  text-transform: capitalize;
+}
+.today,
+.today-card {
+  padding-left: 0;
+  padding-right: 0;
+}
+.today {
+  margin-left: 40px;
+  padding: 0;
+}
+.city {
+  margin-bottom: 0;
+  font-weight: 400;
+  text-align: left;
+}
+.ams {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding: 0;
+}
+.temp {
+  font-weight: 400;
+  text-align: left;
+  border-bottom: 0;
+  margin-bottom: 0;
+}
+.temp-num {
+  font-size: 42px;
+}
+.days,
+.emojis,
+.days-temp {
+  text-align: center;
+}
+.emojis {
+  font-size: 28px;
+}
+.days-temp {
+  font-weight: 100;
+}
+.time {
+  font-size: 18px;
+  text-align: left;
+}
+.bottom-section {
+  margin-top: 10px;
+}
+.third-row {
+  margin: 0 auto;
+  width: 100% auto;
+  padding: 1px;
+  margin-left: 40px;
+}
+.future {
+  margin: 0 auto;
+  display: block;
+  padding: 4px;
+  width: 100% auto;
+  text-align: center;
+}
+.code-source {
+  font-size: 14px;
+  margin-bottom: 0;
+  padding-left: 30px;
+}
